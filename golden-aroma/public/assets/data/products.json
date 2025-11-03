@@ -1,0 +1,422 @@
+[
+  {
+    "id": 1,
+    "product_name": "Herbal Shampoo",
+    "category": "Hair Care",
+    "size": [
+      "250ml",
+      "500ml"
+    ],
+    "dimensions_cm": [
+      "12x8",
+      "14x9"
+    ],
+    "description": "Moisture & Renewal hair shampoo for all hair types. Enriched with rosemary extract and argan oil.",
+    "ingredients": [
+      "rosemary extract",
+      "argan oil"
+    ],
+    "usage": "يوضع كمية مناسبة من الشامبو على شعر مبلل ويدلك بلطف ثم يشطف جيداً. يكرر عند الحاجة.",
+    "features": [
+      "Free from sulfates",
+      "Free from parabens",
+      "Free from silicones",
+      "Free from colorants"
+    ],
+    "scent_variants": [],
+    "expiry": "1 year",
+    "price": {
+      "250ml": 180,
+      "500ml": 290
+    },
+    "image": "assets/images/herbalshambo-removebg-preview.png"
+  },
+  {
+    "id": 2,
+    "product_name": "Hair Tonic Lotion",
+    "category": "Hair Treatment",
+    "size": "120ml",
+    "dimensions_cm": "9.5x7",
+    "description": "Prevents hair loss and enhances hair growth.",
+    "ingredients": [
+      "capsicum",
+      "shea butter",
+      "rosemary",
+      "cocoa butter"
+    ],
+    "usage": "يرج جيداً قبل الاستخدام ويوضع على فروة الرأس ويدلك يومياً مساءً لتحفيز نمو الشعر وتقويته.",
+    "features": [],
+    "scent_variants": [],
+    "expiry": "1 year",
+    "price": 210,
+    "image": "assets/images/hairtonic-removebg-preview.png"
+  },
+  {
+    "id": 3,
+    "product_name": "Body Mist",
+    "category": "Body Care",
+    "size": "120ml",
+    "dimensions_cm": "9.5x7",
+    "description": "Body mist available in four scents.",
+    "ingredients": [],
+    "usage": "يرش على الجسم بعد الاستحمام أو عند الحاجة لإنعاش فوري ورائحة منعشة.",
+    "features": [
+      "Alcohol free"
+    ],
+    "scent_variants": [
+      "Tender",
+      "Moon Sparkle",
+      "Pink Sugar",
+      "Good Girl"
+    ],
+    "expiry": "1 year",
+    "price": 170,
+    "image": "assets/images/bodymist-removebg-preview.png"
+  },
+  {
+    "id": 4,
+    "product_name": "Hair Perfume",
+    "category": "Hair Care",
+    "size": "120ml",
+    "dimensions_cm": "9.5x7",
+    "description": "Hair perfume enriched with jojoba oil, rose hydrosol, and cherry.",
+    "ingredients": [
+      "jojoba oil",
+      "rose hydrosol",
+      "cherry"
+    ],
+    "usage": "يرش على الشعر من مسافة مناسبة لترطيب فوري ورائحة ثابتة طوال اليوم.",
+    "features": [
+      "Alcohol free"
+    ],
+    "scent_variants": [],
+    "expiry": "1 year",
+    "price": 170,
+    "image": "assets/images/hairperfume-removebg-preview.png"
+  },
+  {
+    "id": 5,
+    "product_name": "Anti Dandruff Spray",
+    "category": "Hair Treatment",
+    "size": "120ml",
+    "dimensions_cm": "9.5x7",
+    "description": "Spray to treat and prevent dandruff.",
+    "ingredients": [],
+    "usage": "يرش على فروة الرأس ويدلك جيداً ثم يترك مدة نصف ساعة قبل الغسل، مرتين أسبوعياً حتى اختفاء القشرة.",
+    "features": [],
+    "scent_variants": [],
+    "expiry": "1 year",
+    "price": 140,
+    "image": "assets/images/AntiDandruffSpray-removebg-preview.png"
+  },
+  {
+    "id": 6,
+    "product_name": "Organic Hair Serum",
+    "category": "Hair Care",
+    "size": "60ml",
+    "dimensions_cm": "8x6",
+    "description": "Hair serum with Vitamin E and Argan Oil.",
+    "ingredients": [
+      "Vitamin E",
+      "Argan Oil"
+    ],
+    "usage": "توضع بضع قطرات على أطراف الشعر الجافة أو المتقصفة وتوزع بالتساوي.",
+    "features": [],
+    "scent_variants": [],
+    "expiry": "1 year",
+    "price": 220,
+    "image": "assets/images/organichairserum-removebg-preview.png"
+  },
+  {
+    "id": 7,
+    "product_name": "Face Wash for Dry Skin",
+    "category": "Skin Care",
+    "size": "220ml",
+    "dimensions_cm": "10x7",
+    "description": "Renew, detoxify and clarifying foam for dry skin.",
+    "ingredients": [
+      "Tea Tree Oil",
+      "Salicylic Acid",
+      "Glycerin",
+      "Zinc"
+    ],
+    "usage": "يوضع على بشرة مبللة ويدلك بلطف ثم يشطف جيداً، يستخدم مرتين يومياً.",
+    "features": [],
+    "scent_variants": [],
+    "expiry": "1 year",
+    "price": 200,
+    "image": "assets/images/FaceWashforDrySkin-removebg-preview.png"
+  },
+  {
+    "id": 8,
+    "product_name": "Face Wash for Oily and Mixed Skin",
+    "category": "Skin Care",
+    "size": "220ml",
+    "dimensions_cm": "10x7",
+    "description": "Renew, detoxify and clarifying foam for oily and mixed skin.",
+    "ingredients": [
+      "Tea Tree Oil",
+      "Salicylic Acid",
+      "Glycerin",
+      "Zinc"
+    ],
+    "usage": "يوضع على بشرة مبللة ويغسل بالماء الفاتر لتنظيف عميق وتقليل الإفرازات الدهنية.",
+    "features": [],
+    "scent_variants": [],
+    "expiry": "1 year",
+    "price": 200,
+    "image": "assets/images/FaceWashforOilyandMixedSkin-removebg-preview.png"
+  },
+  {
+    "id": 9,
+    "product_name": "Mascara for Eyebrow & Eyelash",
+    "category": "Cosmetics",
+    "size": "40ml",
+    "dimensions_cm": "7x4",
+    "description": "Strengthening eyebrow and eyelash mascara.",
+    "ingredients": [],
+    "usage": "تستخدم صباحاً ومساءً على الرموش والحواجب لتقويتها وملء الفراغات.",
+    "features": [],
+    "scent_variants": [],
+    "expiry": "1 year",
+    "price": 170,
+    "image": "assets/images/maskara-removebg-preview.png"
+  },
+  {
+    "id": 10,
+    "product_name": "Mix Hair Oil (Anti-Frizz & Split Ends)",
+    "category": "Hair Treatment",
+    "size": "70ml",
+    "dimensions_cm": "8x6",
+    "description": "Mix oil for frizz control and split ends treatment.",
+    "ingredients": [
+      "Coconut Oil",
+      "Castor Oil",
+      "Sesame Oil",
+      "Vitamin E"
+    ],
+    "usage": "يستخدم كحمام زيت أسبوعياً أو على الأطراف يومياً لتقليل الهيشان والتقصف.",
+    "features": [],
+    "scent_variants": [],
+    "expiry": "1 year",
+    "price": 120,
+    "image": "assets/images/mixhairoil-removebg-preview.png"
+  },
+  {
+    "id": 11,
+    "product_name": "Mix Hair Oil (Hair Growth)",
+    "category": "Hair Treatment",
+    "size": "70ml",
+    "dimensions_cm": "8x6",
+    "description": "Mix oil for hair growth stimulation.",
+    "ingredients": [
+      "Argan Oil",
+      "Rosemary Oil",
+      "Vitamin E",
+      "Castor Oil"
+    ],
+    "usage": "يوضع على فروة الرأس مع التدليك لتعزيز الدورة الدموية وتحفيز نمو الشعر.",
+    "features": [],
+    "scent_variants": [],
+    "expiry": "1 year",
+    "price": 220,
+    "image": "assets/images/MixHairOil_HairGrowth_-removebg-preview.png"
+  },
+  {
+    "id": 12,
+    "product_name": "Collagen Cream",
+    "category": "Skin Care",
+    "size": "70ml",
+    "dimensions_cm": "8x6",
+    "description": "Collagen cream for skin glow and hydration. Suitable for all skin types.",
+    "ingredients": [
+      "Shea Butter",
+      "Argan Oil",
+      "Jojoba Oil",
+      "Hyaluronic Acid"
+    ],
+    "usage": "يوضع من مرة إلى مرتين يومياً على بشرة نظيفة لترطيب عميق ومظهر أكثر نضارة.",
+    "features": [
+      "Suitable for all skin types"
+    ],
+    "scent_variants": [],
+    "expiry": "1 year",
+    "price": 200,
+    "image": "assets/images/collagencream-removebg-preview.png"
+  },
+  {
+    "id": 13,
+    "product_name": "Bikini Perfume",
+    "category": "Body Care",
+    "size": "",
+    "dimensions_cm": "8x4",
+    "description": "Secret perfume for sensitive areas.",
+    "ingredients": [],
+    "usage": "يرش برفق على المناطق الحساسة بعد الاستحمام ويحفظ جافاً.",
+    "features": [
+      "Alcohol free"
+    ],
+    "scent_variants": [],
+    "expiry": "1 year",
+    "price": 100,
+    "image": "assets/images/BikiniPerfume-removebg-preview.png"
+  },
+  {
+    "id": 14,
+    "product_name": "Hyaluronic Acid Serum",
+    "category": "Skin Care",
+    "size": "30ml",
+    "dimensions_cm": "5x5",
+    "description": "Helps skin stretch, flex, and reduce wrinkles and fine lines.",
+    "ingredients": [],
+    "usage": "توضع قطرات قليلة على بشرة مبللة ونظيفة صباحاً ومساءً ثم يتبع بكريم مرطب.",
+    "features": [],
+    "scent_variants": [],
+    "expiry": "1 year",
+    "price": 320,
+    "image": "assets/images/HyaluronicAcidSerum-removebg-preview.png"
+  },
+  {
+    "id": 15,
+    "product_name": "Silky Hair Cream",
+    "category": "Hair Care",
+    "size": "80gm",
+    "dimensions_cm": "6",
+    "description": "Daily use cream with argan oil, jojoba oil, coconut and shea butter.",
+    "ingredients": [
+      "Argan Oil",
+      "Jojoba Oil",
+      "Coconut Oil",
+      "Shea Butter"
+    ],
+    "usage": "يوضع على الشعر الجاف أو الرطب يومياً لترطيبه ومنع الهيشان.",
+    "features": [],
+    "scent_variants": [],
+    "expiry": "1 year",
+    "price": 150,
+    "image": "assets/images/silkyhaircream-removebg-preview.png"
+  },
+  {
+    "id": 16,
+    "product_name": "Deodorant Cream",
+    "category": "Body Care",
+    "size": "30gm",
+    "dimensions_cm": "4.2",
+    "description": "Jasmine & Lemon deodorant cream. Alcohol-free and lasts 48 hours.",
+    "ingredients": [],
+    "usage": "يوضع تحت الإبطين صباحاً بعد التنظيف للحصول على حماية طويلة من التعرق والروائح.",
+    "features": [
+      "Alcohol free",
+      "Lasts up to 48 hours"
+    ],
+    "scent_variants": [
+      "Jasmine & Lemon"
+    ],
+    "expiry": "1 year",
+    "price": 120,
+    "image": "assets/images/DeodorantCream-removebg-preview.png"
+  },
+  {
+    "id": 17,
+    "product_name": "Solid Perfume",
+    "category": "Body Care",
+    "size": "30gm",
+    "dimensions_cm": "1.5x7",
+    "description": "Solid perfume with shea butter and coconut oil.",
+    "ingredients": [
+      "Shea Butter",
+      "Coconut Oil"
+    ],
+    "usage": "توضع كمية بسيطة على المعصم وخلف الأذن لمنح رائحة ثابتة طوال اليوم.",
+    "features": [],
+    "scent_variants": [],
+    "expiry": "1 year",
+    "price": 130,
+    "image": "assets/images/solidperfume-removebg-preview.png"
+  },
+  {
+    "id": 18,
+    "product_name": "Hair Balm",
+    "category": "Hair Care",
+    "size": "50gm",
+    "dimensions_cm": "5",
+    "description": "Hair balm with coconut oil, shea butter, and jojoba oil. Adds shine and moisture for up to 48 hours.",
+    "ingredients": [
+      "Coconut Oil",
+      "Shea Butter",
+      "Jojoba Oil"
+    ],
+    "usage": "توضع طبقة خفيفة على الشعر من المنتصف للأطراف للترطيب وإضفاء لمعان فوري.",
+    "features": [
+      "Moisturizes and adds shine up to 48 hours"
+    ],
+    "scent_variants": [],
+    "expiry": "1 year",
+    "price": 140,
+    "image": "assets/images/hairpalm-removebg-preview.png"
+  },
+  {
+    "id": 19,
+    "product_name": "Nail Serum",
+    "category": "Nail Care",
+    "size": "40ml",
+    "dimensions_cm": "2x4",
+    "description": "Serum to strengthen nails. Used twice daily and does not affect ablution.",
+    "ingredients": [],
+    "usage": "يوضع على الأظافر والجلد المحيط بها مرتين يومياً لتقويتها ومنع تكسرها.",
+    "features": [],
+    "scent_variants": [],
+    "expiry": "1 year",
+    "price": 120,
+    "image": "assets/images/nailserum-removebg-preview.png"
+  },
+  {
+    "id": 20,
+    "product_name": "Tint",
+    "category": "Cosmetics",
+    "size": "20ml",
+    "dimensions_cm": "5x6",
+    "description": "Tint for face use when needed.",
+    "ingredients": [],
+    "usage": "يوضع كمية صغيرة على الشفاه أو الخدود ويفرد للحصول على لون طبيعي ثابت.",
+    "features": [],
+    "scent_variants": [],
+    "expiry": "1 year",
+    "price": 100,
+    "image": "assets/images/tint-removebg-preview.png"
+  },
+  {
+    "id": 21,
+    "product_name": "Lip Balm",
+    "category": "Cosmetics",
+    "size": "25gm",
+    "dimensions_cm": "2",
+    "description": "Lip balm with shea butter extract for smooth lips.",
+    "ingredients": [
+      "Shea Butter"
+    ],
+    "usage": "يستخدم يومياً لترطيب الشفاه ومنع تشققها.",
+    "features": [
+      "Moisturizing"
+    ],
+    "scent_variants": [],
+    "expiry": "1 year",
+    "price": 100,
+    "image": "assets/images/lippalm-removebg-preview.png"
+  },
+  {
+    "id": 22,
+    "product_name": "Foot Cream for Cracked Skin",
+    "category": "Body Care",
+    "size": "50gm",
+    "dimensions_cm": "5",
+    "description": "Foot cream for cracked skin.",
+    "ingredients": [],
+    "usage": "يوضع قبل النوم على الكعبين والأقدام مع ارتداء جوارب لامتصاص أفضل.",
+    "features": [],
+    "scent_variants": [],
+    "expiry": "1 year",
+    "price": 110,
+    "image": "assets/images/FootCream-removebg-preview.png"
+  }
+]

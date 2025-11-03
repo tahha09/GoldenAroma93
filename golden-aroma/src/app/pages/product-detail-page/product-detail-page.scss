@@ -1,0 +1,60 @@
+@use "sass:color";
+
+// 🎨 Product Details (Green Themed)
+$product-olive: #A8B545;     // الزرار والعناصر المميزة
+$product-mint: #C9E4C5;      // الخلفيات الفاتحة
+$product-cream: #FAF9F6;     // خلفية أساسية كريمية
+$product-dark: #1F1F1F;      // النصوص
+$product-white: #FFFFFF;     // الأبيض الصافي
+
+.product-details {
+  background-color: $product-cream;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+
+  .product-img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    border: 3px solid $product-mint;
+    background-color: $product-white;
+  }
+
+  .product-name {
+    color: $product-olive;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .product-price {
+    color: color.adjust($product-mint, $lightness: -20%, $space: hsl);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  .product-desc {
+    color: $product-dark;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+
+  .btn-back {
+    background-color: $product-olive;
+    border: none;
+    color: $product-white;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: 0.3s ease;
+
+    &:hover {
+      background-color: color.adjust($product-olive, $lightness: -10%, $space: hsl);
+      color: $product-white;
+      transform: translateY(-2px);
+    }
+  }
+}

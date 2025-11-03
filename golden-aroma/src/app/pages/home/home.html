@@ -1,0 +1,78 @@
+<!-- HERO SECTION -->
+<section class="hero d-flex align-items-center text-center text-lg-start">
+  <div class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h1 class="fw-bold display-5 mb-3 text-accent">Golden Aroma</h1>
+        <p class="lead text-muted mb-4">
+          Discover your natural glow with our luxurious line of feminine cosmetics,
+          made to make you feel confident and radiant.
+        </p>
+        <a routerLink="/products" class="btn btn-lg btn-accent px-4">Shop Now 💄</a>
+      </div>
+      <div class="col-lg-6 mt-4 mt-lg-0">
+        <img src="assets/images/golden_aroma_no_bg.png" alt="Golden Aroma Products" class="img-fluid rounded-4 ">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PRODUCTS -->
+<section class="featured-products text-center py-5">
+  <div class="container">
+    <h2 class="fw-bold mb-4 text-primary">Featured Products</h2>
+    <div class="row g-4">
+      <div class="col-md-4" *ngFor="let product of featuredProducts">
+        <div class="card border-0 shadow-sm h-100 rounded-4 overflow-hidden">
+
+          <!-- ✅ تعديل الصورة -->
+          <div class="image-wrapper">
+            <img [src]="product.image" class="product-img" [alt]="product.product_name">
+          </div>
+
+          <div class="card-body">
+            <h5 class="card-title text-accent">{{ product.product_name }}</h5>
+
+            <p class="card-text text-muted">
+              <ng-container *ngIf="typeof product.price === 'number'; else multiplePrices">
+                {{ product.price | currency:'EGP':'symbol':'1.0-0' }}
+              </ng-container>
+
+              <ng-template #multiplePrices>
+                <div *ngFor="let key of getPriceKeys(product.price)">
+                  {{ key }}: {{ getPriceValue(product.price, key) | currency:'EGP':'symbol':'1.0-0' }}
+                </div>
+              </ng-template>
+            </p>
+
+            <a [routerLink]="['/product', product.id]" class="btn btn-outline-accent">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ABOUT BRAND -->
+<section class="about py-5 bg-light text-center">
+  <div class="container">
+    <h2 class="fw-bold text-accent mb-3">About Golden Aroma</h2>
+    <p class="text-muted mx-auto w-75">
+      At Golden Aroma, we believe beauty is more than skin deep. Our products are made with
+      love, care, and a touch of gold to bring out your natural charm.
+    </p>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter py-5 text-center">
+  <div class="container">
+    <h3 class="fw-bold text-accent mb-3">Stay in the Glow ✨</h3>
+    <p class="text-muted mb-4">Subscribe to our newsletter for new arrivals and exclusive offers!</p>
+    <form class="d-flex justify-content-center gap-2">
+      <input type="email" class="form-control w-50" placeholder="Enter your email">
+      <button type="submit" class="btn btn-accent px-4">Subscribe</button>
+    </form>
+  </div>
+</section>

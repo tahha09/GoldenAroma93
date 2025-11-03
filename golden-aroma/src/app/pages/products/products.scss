@@ -1,0 +1,62 @@
+@use "sass:color";
+
+// 🎨 ألوان التدرج الأخضر المستخدم
+$product-olive: #A8B545;     // الأخضر الزيتوني (أساسي)
+$product-mint: #C9E4C5;      // الأخضر الفاتح
+$product-cream: #FAF9F6;     // خلفية كريمية ناعمة
+$product-dark: #2B2B2B;      // النصوص الداكنة
+$product-white: #FFFFFF;     // الأبيض الصافي
+
+.products-section {
+  background-color: $product-cream;
+
+  h2 {
+    color: $product-olive;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+  .product-card {
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
+    background-color: $product-white;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(168, 181, 69, 0.2); // ظل بنفس درجة الأخضر الزيتوني
+    }
+
+    img {
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+      height: 280px;
+      object-fit: cover;
+    }
+
+    .card-title {
+      color: $product-dark;
+      font-weight: 600;
+    }
+
+    .price {
+      color: color.adjust($product-mint, $lightness: -25%, $space: hsl); // أخضر أغمق قليلًا
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    .btn-buy {
+      background-color: $product-olive;
+      border: none;
+      color: $product-white;
+      font-weight: 600;
+      border-radius: 30px;
+      padding: 8px 20px;
+      transition: 0.3s ease;
+
+      &:hover {
+        background-color: color.adjust($product-olive, $lightness: -10%, $space: hsl);
+        transform: translateY(-2px);
+      }
+    }
+  }
+}

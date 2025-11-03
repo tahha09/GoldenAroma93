@@ -1,0 +1,16 @@
+<section class="products-section container py-5">
+  <h2 class="text-center mb-5">Our Products</h2>
+
+  <div class="row g-4">
+    <div class="col-12 col-md-6 col-lg-4" *ngFor="let product of products">
+      <div class="card shadow-sm border-0 product-card">
+        <img [src]="product.image" [alt]="product.name" class="card-img-top">
+        <div class="card-body text-center">
+          <h5 class="card-title">{{ product.name }}</h5>
+          <p class="price">{{ product.price }} EGP</p>
+          <a [routerLink]="['/product', product.id]" class="btn btn-buy">View Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

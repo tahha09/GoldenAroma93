@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom global styles */
+@layer base {
+  body {
+    @apply bg-background text-text font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-primary;
+  }
+}
+
+@layer components {
+  button {
+    @apply bg-primary text-text px-4 py-2 rounded hover:bg-accent transition-colors;
+  }
+}

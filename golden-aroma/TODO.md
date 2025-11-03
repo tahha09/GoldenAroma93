@@ -1,0 +1,4 @@
+- [ ] Update Product model to match JSON fields
+- [ ] Update home.ts to use ProductService for featuredProducts
+- [ ] Update product-detail-page.ts to use ProductService for product details
+- [ ] Test routing and data loading

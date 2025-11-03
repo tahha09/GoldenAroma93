@@ -1,0 +1,81 @@
+<div class="product-details container py-5" *ngIf="product">
+  <div class="row g-5 align-items-center">
+
+    <!-- Product Image -->
+    <div class="col-md-6 text-center">
+      <div class="image-wrapper shadow-lg rounded-4 p-3 bg-light">
+        <img [src]="product.image" [alt]="product.product_name" class="product-img rounded-4 img-fluid">
+      </div>
+    </div>
+
+    <!-- Product Info -->
+    <div class="col-md-6">
+      <h2 class="product-name mb-3 fw-bold text-uppercase">{{ product.product_name }}</h2>
+
+      <div class="product-meta mb-3">
+        <span class="badge bg-success me-2" *ngIf="product.category">{{ product.category }}</span>
+        <span class="text-warning" *ngIf="product.rating">⭐ {{ product.rating }}/5</span>
+      </div>
+
+      <!-- Price -->
+      <div class="product-price h4 mb-3">
+        <ng-container *ngIf="typeof product.price === 'number'; else multiplePrices">
+          {{ product.price | currency:'EGP':'symbol':'1.0-0' }}
+        </ng-container>
+
+        <ng-template #multiplePrices>
+          <div *ngFor="let key of getPriceKeys(product.price)">
+            <span class="fw-semibold">{{ key }}:</span>
+            {{ getPriceValue(product.price, key) | currency:'EGP':'symbol':'1.0-0' }}
+          </div>
+        </ng-template>
+      </div>
+
+      <!-- Description -->
+      <p class="text-muted mb-3">{{ product.description }}</p>
+
+      <!-- Features -->
+      <div *ngIf="product.features?.length" class="mb-3">
+        <h6 class="fw-bold text-dark">✨ Features:</h6>
+        <ul>
+          <li *ngFor="let feature of product.features">{{ feature }}</li>
+        </ul>
+      </div>
+
+      <!-- Ingredients -->
+      <div *ngIf="product.ingredients?.length" class="mb-3">
+        <h6 class="fw-bold text-dark">🌿 Ingredients:</h6>
+        <ul>
+          <li *ngFor="let ing of product.ingredients">{{ ing }}</li>
+        </ul>
+      </div>
+
+      <!-- Scent Variants -->
+      <div *ngIf="product.scent_variants?.length" class="mb-3">
+        <h6 class="fw-bold text-dark">🌸 Available Scents:</h6>
+        <span class="badge bg-secondary me-1" *ngFor="let scent of product.scent_variants">
+          {{ scent }}
+        </span>
+      </div>
+
+      <!-- Size & Dimensions -->
+      <div *ngIf="product.size || product.dimensions_cm" class="mb-3">
+        <h6 class="fw-bold text-dark">📦 Size & Dimensions:</h6>
+        <p class="mb-1" *ngIf="product.size">Size: <span class="fw-medium">{{ product.size }}</span></p>
+      </div>
+
+      <!-- Usage -->
+      <div *ngIf="product.usage" class="mb-3">
+        <h6 class="fw-bold text-dark">🧴 How to Use:</h6>
+        <p>{{ product.usage }}</p>
+      </div>
+
+      <!-- Expiry -->
+      <div *ngIf="product.expiry" class="text-muted small mb-3">
+        <strong>Expiry:</strong> {{ product.expiry }}
+      </div>
+
+      <button class="btn btn-outline-dark mt-4 px-4 rounded-pill" (click)="goBack()">← Back to Products</button>
+    </div>
+  </div>
+</div>

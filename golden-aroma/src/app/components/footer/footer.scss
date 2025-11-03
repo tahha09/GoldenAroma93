@@ -1,0 +1,77 @@
+.footer {
+  background-color: #F9F9F7;
+  border-top: 2px solid #A3D1C6;
+  color: #1F1F1F;
+  padding: 40px 20px;
+  position: relative;
+  z-index: 2;
+
+  .footer-logo {
+    width: 70px;
+    border-radius: 50%;
+  }
+
+  .brand-name {
+    color: #3A725F; // أخضر زيتوني غامق
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+  .footer-desc {
+    color: #4E5E5A;
+    font-size: 1rem;
+  }
+
+  .footer-title {
+    color: #3A725F;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  .footer-links a {
+    display: block;
+    color: #1F1F1F; // غامق جدًا ليظهر بوضوح
+    text-decoration: none;
+    margin-bottom: 6px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: #3A725F; // يتحول لأخضر عند الـ hover
+      transform: translateX(3px);
+    }
+  }
+
+  .social-icons a {
+    color: #3A725F;
+    font-size: 1.5rem;
+    margin: 0 8px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: #A3D1C6;
+      transform: scale(1.1);
+    }
+  }
+
+  .copyright {
+    font-size: 0.9rem;
+    color: #4E5E5A;
+    margin-top: 20px;
+
+    span {
+      color: #3A725F;
+      font-weight: 600;
+    }
+  }
+}
+
+.footer {
+  position: relative;
+  z-index: 10;
+
+  a {
+    position: relative;
+    z-index: 20;
+  }
+}
