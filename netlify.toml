@@ -1,7 +1,7 @@
 [build]
   base = "golden-aroma"
   command = "npm run build"
-  publish = "golden-aroma/dist/golden-aroma/browser"
+  publish = "dist/golden-aroma/browser"
 
 [build.environment]
   NODE_VERSION = "20.19.0"
