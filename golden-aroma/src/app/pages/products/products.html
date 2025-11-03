@@ -1,14 +1,36 @@
-<section class="products-section container py-5">
-  <h2 class="text-center mb-5">Our Products</h2>
+<!-- PRODUCTS SECTION -->
+<section class="products-section py-5">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-5 text-accent">Our Products</h2>
 
-  <div class="row g-4">
-    <div class="col-12 col-md-6 col-lg-4" *ngFor="let product of products">
-      <div class="card shadow-sm border-0 product-card">
-        <img [src]="product.image" [alt]="product.name" class="card-img-top">
-        <div class="card-body text-center">
-          <h5 class="card-title">{{ product.name }}</h5>
-          <p class="price">{{ product.price }} EGP</p>
-          <a [routerLink]="['/product', product.id]" class="btn btn-buy">View Details</a>
+    <div class="row g-4">
+      <div class="col-12 col-md-6 col-lg-4" *ngFor="let product of products">
+        <div class="card border-0 shadow-sm h-100 product-card rounded-4 overflow-hidden">
+
+          <!-- ✅ Product Image -->
+          <div class="image-wrapper">
+            <img [src]="product.image" [alt]="product.name" class="product-img" />
+          </div>
+
+          <div class="card-body text-center">
+            <h5 class="card-title text-accent">{{ product.name }}</h5>
+            <p class="price mb-3">
+              <ng-container *ngIf="typeof product.price === 'number'; else multiplePrices">
+                {{ product.price | currency:'EGP':'symbol':'1.0-0' }}
+              </ng-container>
+
+              <ng-template #multiplePrices>
+                <div *ngFor="let key of getPriceKeys(product.price)">
+                  {{ key }}:
+                  {{ getPriceValue(product.price, key) | currency:'EGP':'symbol':'1.0-0' }}
+                </div>
+              </ng-template>
+            </p>
+
+            <a [routerLink]="['/product', product.id]" class="btn btn-accent px-4">
+              View Details
+            </a>
+          </div>
         </div>
       </div>
     </div>

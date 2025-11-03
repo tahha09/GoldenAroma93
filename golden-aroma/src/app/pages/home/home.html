@@ -11,7 +11,11 @@
         <a routerLink="/products" class="btn btn-lg btn-accent px-4">Shop Now 💄</a>
       </div>
       <div class="col-lg-6 mt-4 mt-lg-0">
-        <img src="assets/images/golden_aroma_no_bg.png" alt="Golden Aroma Products" class="img-fluid rounded-4 ">
+        <img
+          src="assets/images/golden_aroma_no_bg.png"
+          alt="Golden Aroma Products"
+          class="img-fluid rounded-4"
+        />
       </div>
     </div>
   </div>
@@ -24,10 +28,13 @@
     <div class="row g-4">
       <div class="col-md-4" *ngFor="let product of featuredProducts">
         <div class="card border-0 shadow-sm h-100 rounded-4 overflow-hidden">
-
-          <!-- ✅ تعديل الصورة -->
+          <!-- ✅ Product Image -->
           <div class="image-wrapper">
-            <img [src]="product.image" class="product-img" [alt]="product.product_name">
+            <img
+              [src]="product.image"
+              class="product-img"
+              [alt]="product.product_name"
+            />
           </div>
 
           <div class="card-body">
@@ -35,24 +42,26 @@
 
             <p class="card-text text-muted">
               <ng-container *ngIf="typeof product.price === 'number'; else multiplePrices">
-                {{ product.price | currency:'EGP':'symbol':'1.0-0' }}
+                {{ product.price | currency: 'EGP':'symbol':'1.0-0' }}
               </ng-container>
 
               <ng-template #multiplePrices>
                 <div *ngFor="let key of getPriceKeys(product.price)">
-                  {{ key }}: {{ getPriceValue(product.price, key) | currency:'EGP':'symbol':'1.0-0' }}
+                  {{ key }}:
+                  {{ getPriceValue(product.price, key) | currency: 'EGP':'symbol':'1.0-0' }}
                 </div>
               </ng-template>
             </p>
 
-            <a [routerLink]="['/product', product.id]" class="btn btn-outline-accent">View Details</a>
+            <a [routerLink]="['/product', product.id]" class="btn btn-outline-accent"
+              >View Details</a
+            >
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
 
 <!-- ABOUT BRAND -->
 <section class="about py-5 bg-light text-center">
@@ -71,7 +80,7 @@
     <h3 class="fw-bold text-accent mb-3">Stay in the Glow ✨</h3>
     <p class="text-muted mb-4">Subscribe to our newsletter for new arrivals and exclusive offers!</p>
     <form class="d-flex justify-content-center gap-2">
-      <input type="email" class="form-control w-50" placeholder="Enter your email">
+      <input type="email" class="form-control w-50" placeholder="Enter your email" />
       <button type="submit" class="btn btn-accent px-4">Subscribe</button>
     </form>
   </div>

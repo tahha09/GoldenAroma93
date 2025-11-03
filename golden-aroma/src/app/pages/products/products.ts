@@ -31,4 +31,18 @@ export class Products implements OnInit {
       }
     });
   }
+
+    getPriceKeys(price: number | { [key: string]: number }): string[] {
+  if (typeof price === 'object' && price !== null) {
+    return Object.keys(price);
+  }
+  return [];
+}
+
+getPriceValue(price: number | { [key: string]: number }, key: string): number {
+  if (typeof price === 'object' && price !== null) {
+    return price[key];
+  }
+  return 0;
+}
 }
