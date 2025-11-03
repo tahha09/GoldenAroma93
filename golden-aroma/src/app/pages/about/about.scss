@@ -47,15 +47,38 @@
     padding-left: 15px;
   }
 
+  /* 🌟 تحسين مظهر الموبايل */
   @media (max-width: 768px) {
     padding: 40px 20px;
+    text-align: center;
+
+    .row {
+      flex-direction: column;
+    }
+
+    .about-img {
+      margin-bottom: 30px; /* مسافة بين الصورة والنص */
+      max-width: 300px;
+    }
 
     .about-title {
       font-size: 1.8rem;
+      margin-bottom: 15px;
     }
 
     .about-text {
       font-size: 0.95rem;
+      text-align: center; /* النص في المنتصف للموبايل */
+      margin-bottom: 15px;
+    }
+
+    .about-quote {
+      font-size: 0.95rem;
+      margin-top: 25px;
+      border-left: none;
+      border-top: 2px solid #A3D1C6;
+      padding-left: 0;
+      padding-top: 10px;
     }
   }
 }

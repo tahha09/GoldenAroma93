@@ -81,15 +81,40 @@
     }
   }
 
+  /* 🌟 تحسين عرض الموبايل */
   @media (max-width: 768px) {
     padding: 40px 20px;
+    text-align: center;
+
+    .row {
+      flex-direction: column;
+    }
+
+    .contact-img {
+      margin-bottom: 30px; /* مسافة بين الصورة والفورم */
+      max-width: 300px;
+    }
 
     .contact-title {
       font-size: 1.6rem;
+      margin-bottom: 10px;
     }
 
     .contact-desc {
       font-size: 0.95rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    form {
+      text-align: left; /* عشان الليبلز والفورم يبقوا مظبوطين */
+      max-width: 95%;
+      margin: 0 auto;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 10px;
     }
   }
 }
