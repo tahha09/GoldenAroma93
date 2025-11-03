@@ -1,11 +1,10 @@
 [build]
-  base = "golden-aroma"
   command = "npm run build"
   publish = "dist/golden-aroma/browser"
 
 [build.environment]
-  NODE_VERSION = "18"
-  NPM_VERSION = "9"
+  NODE_VERSION = "20.19.0"
+  NPM_VERSION = "10"
 
 [[redirects]]
   from = "/*"
